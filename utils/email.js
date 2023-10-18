@@ -1,16 +1,16 @@
-const nodemailer = require('nodemailer');
-const { htmlToText } = require('html-to-text');
+const nodemailer = require("nodemailer");
+const { htmlToText } = require("html-to-text");
 
 module.exports = class Email {
   constructor(user, url) {
     this.to = user.email;
-    this.firstName = user.name.split(' ')[0];
+    this.firstName = user.name.split(" ")[0];
     this.url = url;
     this.from = `Joe Bailey <${process.env.EMAIL_FROM}>`;
   }
 
   newTransport() {
-    if (process.env.NODE_ENV === 'production') {
+    if (process.env.NODE_ENV === "production") {
       return nodemailer.createTransport({
         host: process.env.BREVO_HOST,
         port: process.env.BREVO_PORT,
@@ -32,28 +32,16 @@ module.exports = class Email {
     });
   }
 
-  // async send(template, subject) {
   async send(template, subject) {
-    // render HTML based on pug template
-
-    // const html = pug.renderFile(
-    //   `${__dirname}/../views/emails/${template}.pug`,
-    //   {
-    //     firstName: this.firstName,
-    //     url: this.url,
-    //     subject,
-    //   },
-    // );
-
     const options = {
       wordwrap: 130,
       // ...
     };
-    let html = '';
+    let html = "";
 
-    if (template === 'welcome') {
+    if (template === "welcome") {
       html = `${__dirname}/../public/WelcomeEmail.html`;
-    } else if (template === 'passwordReset') {
+    } else if (template === "passwordReset") {
       html = `${__dirname}/../public/passwordReset.html`;
     }
 
@@ -72,13 +60,13 @@ module.exports = class Email {
 
   async sendWelcome() {
     // await this.send('welcome', 'Welcome to Natours Family!');
-    await this.send('welcome', 'Welcome to RAJ TOURS Family!');
+    await this.send("welcome", "Welcome to RAJ TOURS Family!");
   }
 
   async sendPasswordReset() {
     await this.send(
-      'passwordReset',
-      'Your password reset token (valid for only 10 minutes)',
+      "passwordReset",
+      "Your password reset token (valid for only 10 minutes)"
     );
   }
 };
