@@ -17,7 +17,7 @@ const bookingRouter = require("./routes/bookingRoutes");
 
 const app = express();
 
-app.enable("trust proxy");
+app.set("trust proxy", 1);
 // 1) GLOBAL MIDDLEWARES
 
 app.use(cors());
