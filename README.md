@@ -27,8 +27,9 @@ This Api is designed for the travel and Tourism industry in mind.Companies can t
 5. Automated sending of confirmation mails at each booking\
 6. Implementation ofg advanced authentication methods like refresh token and 2-factor authentication.\
 
-## API Link : (https://raj-tours.onrender.com)
+# API Link : (https://raj-tours.onrender.com)
 
+# API DOC : (https://documenter.getpostman.com/view/2s9YR9ZDKo?version=latest)
 
 ## Tech Stack
 
