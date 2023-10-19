@@ -1,7 +1,7 @@
 
-## A Tour and Travel agency API 
+## A Tour Management System API 
 
-This Api is designed for the travel and Tourism industry in mind.Companies can take this api as inspiration and reuse this api as a boilerplate in adddition to their custom functionalities and requirements.
+This Api is designed for the travel and Tour industry.Tour/Trekking Companies can take this api as inspiration and reuse this api as a boilerplate in adddition to their custom functionalities and requirements.
 
 # Major current features include :
 
