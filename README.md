@@ -22,7 +22,7 @@ This Api is designed for the travel and Tour industry.Tour/Trekking Companies ca
    a) User can only review a tour which he/she has booked.
    b) User can only book tours till subscription count is less or equal to maxGroupSize or else tour is SOLD OUT and user cannot book.
 4. routes showing (for Admins only)
-   a) bookings done by on a particular tour
+   a) bookings done for a particular tour
    b) booking done by a particular user
 5. Automated sending of confirmation mails at each booking
 6. Implementation ofg advanced authentication methods like refresh token and 2-factor authentication.
