@@ -36,6 +36,3 @@ This Api is designed for the travel and Tour industry.Tour/Trekking Companies ca
 **Server:** Node, Express
 
 **Database:** MongoDb
-
-
-Note: This app has been inspired from udemy content creator Jonas Schmedtmann (NodeJs Course).
